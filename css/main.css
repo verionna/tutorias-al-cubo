@@ -1,0 +1,159 @@
+:root {
+	--clr-primary-200:#247BA0;
+	--clr-primary-400:#1B98E0;
+
+	
+	--clr-neutral-100:#E8F1F2;
+	--clr-neutral-900:#CBA135;
+
+
+	--ff-primary: 'Oswald', sans-serif;	
+	--ff-secundary: 'Bitter', serif;	
+	--ff-accent:'Roboto', sans-serif;	
+
+}
+
+/*general configurations*/
+body {
+	font-family: var(--ff-primary);
+	font-weight: 400;
+	font-size: 1.3125rem;
+	line-height: 1.6;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--clr-primary-400);
+	font-family: var(--ff-secundary);
+	font-weight: 900;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+
+p {
+	font-family: var(--ff-accent);
+}
+/*animation*/
+#welcome {
+	height: 1.4em;
+	padding: 0 14px 0 7px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+#welcome:before {
+	content: '';
+	background-color: #4a4a4a;
+	width: 1PX;
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	right: 7px;
+	animation: blinkNaim 500ms linear infinite;
+}
+
+@keyframes blinkAnim {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+/*spaces*/
+h2,
+h3,
+p {
+	margin-bottom: 1em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+header,
+section {
+	padding: 3rem 0;
+}
+
+@media (min-width: 40em) {
+	header,
+	section {
+		padding: 4rem 0;
+	}
+}
+/*responsive design*/
+.container {
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
+}
+
+.split {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 40em) {
+	.split {
+		flex-direction: row;
+	}
+
+	.split > * {
+		flex-basis: 100%;
+
+	}
+
+	.split > * + * {
+		margin-left: 2em;
+	}
+}
+
+.container--narrow {
+	max-width: 35rem;
+}
+
+.text-center {
+	text-align: center;
+}
+/*background colors*/
+/*CAMBIAR EL NOMBRE DE LAS VARIABLES EN HTML Y CCSS*/
+.bg-white {
+	background-color: var(--clr-neutral-100);
+}
+
+.bg-gray {
+	background-color: var(--clr-primary-400);
+}
+
+.bg-yellow {
+	color: var(--clr-neutral-100);
+	background-color: var(--clr-neutral-100);
+}
+
+.bg-aquamarine {
+	color: var(--clr-neutral-100);
+	background-color: var(--clr-primary-200);
+}
+
+.bg-yellow h2,
+.bg-aquamarine h2 {
+	color: var(--clr-primary-400);
+}
+
+/*footer*/
+
+footer {
+	width: 100%;
+	background-color: var(--clr-neutral-100);
+}
