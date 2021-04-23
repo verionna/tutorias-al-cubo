@@ -32,7 +32,8 @@ p {
 h1,
 h2,
 h3 {
-	color: var(--clr-primary-400);
+	/* color: var(--clr-primary-400); */
+	color: #272323;
 	font-family: var(--ff-secundary);
 	font-weight: 900;
 	line-height: 1;
@@ -137,7 +138,8 @@ section {
 }
 
 .bg-yellow {
-	color: var(--clr-neutral-100);
+	/* color: var(--clr-neutral-100); */
+	color: #272323;
 	background-color: var(--clr-neutral-100);
 }
 
@@ -155,5 +157,4 @@ section {
 
 footer {
 	width: 100%;
-	background-color: var(--clr-neutral-100);
 }
