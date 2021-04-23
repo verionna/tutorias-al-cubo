@@ -155,8 +155,9 @@ section {
 
 /*contact*/
 #whatsappimg {
-	width: 0.2rem;
- 	height: 0.2rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    margin: auto;
 }
 /*footer*/
 
